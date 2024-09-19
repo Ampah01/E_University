@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full h-16 flex justify-between items-center px-6 bg-white shadow-md z-50">
       <a href="home.html">
-        <img src={logo} alt="Logo" className="w-16 h-16" />
+        <img src={logo} alt="Logo" className="w-14 md:h-16 h-12" />
       </a>
 
       <ul className="hidden md:flex md:space-x-6 text-gray-800 font-semibold">

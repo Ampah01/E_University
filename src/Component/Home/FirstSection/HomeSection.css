@@ -1,0 +1,52 @@
+.home-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.home-description {
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.learn-more-button {
+  padding: 10px 25px;
+  border: 1px solid rgba(5, 4, 46, 0.7);
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  background-color: rgb(5, 4, 46);
+  transition: all 0.2s ease;
+}
+
+.learn-more-button:active,
+.visit-courses-button:active {
+  filter: brightness(0.8);
+}
+
+.visit-courses-button {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding: 10px 25px;
+  border: 1px solid rgb(223, 164, 15);
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  background-color: rgb(223, 164, 16);
+  transition: all 0.2s ease;
+}
+
+.visit-courses-button:hover,
+.learn-more-button:hover {
+  color: rgb(5, 4, 46);
+  border: 1px solid rgb(5, 4, 46);
+  background-color: #fff;
+}
