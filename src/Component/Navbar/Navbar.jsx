@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/4.png";
-import "@fortawesome/fontawesome-free/css/all.min.css"; 
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [navBg, setNavBg] = useState("bg-slate-50 shadow-md");
 
   let touchStartX = 0;
   let touchEndX = 0;
@@ -30,54 +32,109 @@ const Navbar = () => {
     }
   };
 
-  return (
-    <nav className="fixed w-full h-16 flex justify-between items-center px-6 bg-white shadow-md z-50">
-      <a href="home.html">
-        <img src={logo} alt="Logo" className="w-14 md:h-16 h-12" />
-      </a>
+  useEffect(() => {
+    const handleScroll = () => {
+      const homeSectionHeight = 550;
 
-      <ul className="hidden md:flex md:space-x-6 text-gray-800 font-semibold">
+      if (window.scrollY > homeSectionHeight) {
+        setNavBg("bg-[#09131f] shadow-md");
+      } else {
+        setNavBg("bg-slate-50 shadow-md");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const linkColor =
+    navBg === "bg-[#09131f] shadow-md" ? "text-slate-50" : "text-gray-800";
+
+  return (
+    <nav
+      className={`fixed w-full h-16 flex justify-between items-center px-6 z-50 transition-colors duration-300 ${navBg}`}
+    >
+      <NavLink to="/" onClick={handleLinkClick}>
+        <img src={logo} alt="Logo" className="w-14 md:h-16 h-12" />
+      </NavLink>
+
+      <ul className={`hidden md:flex md:space-x-6 font-semibold ${linkColor}`}>
         <li>
-          <a href="home.html" className="hover:text-yellow-600">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-600" : "hover:text-yellow-600"
+            }
+          >
             Home
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="about.html" className="hover:text-yellow-600">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-600" : "hover:text-yellow-600"
+            }
+          >
             About
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="blog.html" className="hover:text-yellow-600">
+          <NavLink
+            to="/blog"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-600" : "hover:text-yellow-600"
+            }
+          >
             Blog
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="courses.html" className="hover:text-yellow-600">
+          <NavLink
+            to="/courses"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-600" : "hover:text-yellow-600"
+            }
+          >
             Courses
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="contact.html" className="hover:text-yellow-600">
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-600" : "hover:text-yellow-600"
+            }
+          >
             Contact
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a
-            href="#"
-            className="bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700"
+          <NavLink
+            to="/login"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-600" : "hover:text-yellow-600"
+            }
           >
             Login
-          </a>
+          </NavLink>
         </li>
       </ul>
 
+      
       <div className="md:hidden">
-        <button onClick={toggleMenu} aria-label="Toggle Menu">
+        <button
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+          aria-expanded={isMenuOpen}
+        >
           <i
             className={`fas ${
               isMenuOpen ? "fa-times" : "fa-bars"
-            } text-2xl text-gray-800`}
+            } text-2xl ${linkColor}`}
           ></i>
         </button>
       </div>
@@ -92,58 +149,72 @@ const Navbar = () => {
       >
         <ul className="flex flex-col space-y-6 text-gray-800 font-semibold">
           <li>
-            <a
-              href="home.html"
-              className="hover:text-yellow-600"
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-600" : "hover:text-yellow-600"
+              }
               onClick={handleLinkClick}
             >
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="about.html"
-              className="hover:text-yellow-600"
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-600" : "hover:text-yellow-600"
+              }
               onClick={handleLinkClick}
             >
               About
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="blog.html"
-              className="hover:text-yellow-600"
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-600" : "hover:text-yellow-600"
+              }
               onClick={handleLinkClick}
             >
               Blog
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="courses.html"
-              className="hover:text-yellow-600"
+            <NavLink
+              to="/courses"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-600" : "hover:text-yellow-600"
+              }
               onClick={handleLinkClick}
             >
               Courses
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="contact.html"
-              className="hover:text-yellow-600"
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-600" : "hover:text-yellow-600"
+              }
               onClick={handleLinkClick}
             >
               Contact
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="#"
-              className="bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700"
+            <NavLink
+              to="/login"
+              className={({ isActive }) =>
+                isActive
+                  ? "bg-yellow-600 text-gray-800 px-4 py-2 rounded-md"
+                  : "bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700 hover:text-yellow-600"
+              }
               onClick={handleLinkClick}
             >
               Login
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>

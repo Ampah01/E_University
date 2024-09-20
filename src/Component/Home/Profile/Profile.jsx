@@ -31,7 +31,7 @@ const profiles = [
 const ProfileSection = () => {
   return (
     <section className="py-12 px-4">
-      <h1 className="text-3xl font-bold text-center mb-4 text-[#0c366e]">Community Experts</h1>
+      <h1 className="text-3xl font-bold text-center mb-4 text-gray-800">Community Experts</h1>
       <p className="text-center mb-8 text-gray-600">
         Replenish man have thing gathering lights yielding shall you
       </p>

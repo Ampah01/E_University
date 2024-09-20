@@ -5,7 +5,7 @@ const FeaturesSection = () => {
   return (
     <section className="bg-gray-100 py-16 px-8">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4 text-[#0c366e]">Awesome Feature</h1>
+        <h1 className="text-3xl font-bold mb-4 text-gray-800">Awesome Feature</h1>
         <p className="text-lg text-gray-700">
           Replenish man have thing gathering lights yielding shall you
         </p>

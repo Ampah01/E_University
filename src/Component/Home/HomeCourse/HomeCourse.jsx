@@ -101,7 +101,7 @@ const CourseCard = ({ course }) => (
 
 const Courses = () => (
   <section className="courses-section py-16 px-8 rounded-xl">
-    <h1 className="text-center">Our Popular Courses</h1>
+    <h1 className="text-gray-800 text-center text-3xl">Our Popular Courses</h1>
     <p className="text-center">
       Discover our selection of popular courses designed to help you advance
       your skills and career. Explore the latest updates and offerings.

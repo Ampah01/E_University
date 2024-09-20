@@ -54,14 +54,14 @@ const Registration = () => {
         backgroundImage: `linear-gradient(rgba(99,115,168,0.5),rgba(81,91,233,0.5)), url(${bg_image})`,
       }}
     >
-      <div className="flex flex-col mb-[120px]">
+      <div className="flex flex-col text-center md:text-start">
         <p className="text-white text-lg font-medium px-2 pb-2">
           Get 100 Online Courses for Free
         </p>
         <h1 className="text-white text-2xl font-extrabold px-2 mb-0">
           Register To Get It
         </h1>
-        <div className="flex flex-wrap mt-5 text-center ">
+        <div className="flex flex-wrap mt-5 text-center justify-center md:justify-normal">
           <div className="flex flex-col items-center justify-center w-[100px] h-[80px] text-white bg-white/25 rounded-lg m-1">
             <span className="text-[35px]">{time.days}</span>
             <span>Days</span>
@@ -80,7 +80,7 @@ const Registration = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center text-center p-8 bg-white shadow-lg rounded-lg w-full max-w-md">
+      <div className="flex flex-col items-center text-center py-10 px-2 bg-white shadow-lg rounded-lg w-[90%] max-w-md ">
         <h2 className="text-xl font-semibold text-black mb-4">
           Create Free Account NOW!
         </h2>
@@ -89,25 +89,25 @@ const Registration = () => {
             type="text"
             name="name"
             placeholder="Name"
-            className="w-[240px] p-3 mb-4 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-[#0c366e]"
+            className="w-full md:w-[270px] p-2 mb-4 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-[#0c366e]"
           />
           <input
             type="email"
             name="email"
             placeholder="Email Address"
-            className="w-[240px] p-3 mb-4 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-[#0c366e]"
+            className="w-full md:w-[270px] p-2 mb-4 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-[#0c366e]"
           />
           <input
             type="password"
             name="password"
             placeholder="Password"
-            className="w-[240px] p-3 mb-4 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-[#0c366e]"
+            className="w-full md:w-[270px] p-2 mb-4 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-[#0c366e]"
           />
           <input
             type="password"
             name="confirmPassword"
             placeholder="Confirm Password"
-            className="w-[240px] p-3 mb-6 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-[#0c366e]"
+            className="w-full md:w-[270px] p-3 mb-6 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-[#0c366e]"
           />
           <button
             type="submit"

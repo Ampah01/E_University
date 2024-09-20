@@ -1,12 +1,13 @@
 import React from "react";
 import pic_1 from "../../../assets/pic_1.jpg";
+import { Link } from "react-router-dom"; 
 import "./../FirstSection/HomeSection.css";
 
 const HomeSection = () => {
   return (
     <section className="home bg-gray-100">
       <section
-        className="relative flex flex-col justify-center items-center text-center md:h-[80vh] h-[90vh]"
+        className="relative flex flex-col justify-center items-center text-center md:h-[80vh] h-[95vh]"
         style={{
           backgroundImage: `linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(${pic_1})`,
           backgroundRepeat: "no-repeat",
@@ -16,11 +17,11 @@ const HomeSection = () => {
           marginBottom: "0",
         }}
       >
-        <div className="relative z-10 ">
-          <h1 className="home-title">
+        <div className="relative z-10">
+          <h1 className="home-title p-1">
             Enhance Your Future With the Best Education
           </h1>
-          <p className="home-description p-4">
+          <p className="home-description py-4 px-6">
             At our university, we are dedicated to providing a transformative
             educational experience that prepares students for success in a
             rapidly changing world. Our innovative programs and diverse academic
@@ -31,12 +32,12 @@ const HomeSection = () => {
             vibrant academic community committed to excellence and discovery.
           </p>
           <div className="buttons">
-            <a className="learn-more-button mr-2" href="about.html">
+            <Link to="/about" className="learn-more-button mr-2">
               Learn More
-            </a>
-            <a className="visit-courses-button ml-2" href="courses.html">
+            </Link>
+            <Link to="/courses" className="visit-courses-button ml-2">
               Visit Courses
-            </a>
+            </Link>
           </div>
         </div>
       </section>
