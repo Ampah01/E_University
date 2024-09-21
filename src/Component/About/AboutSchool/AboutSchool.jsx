@@ -5,17 +5,17 @@ import accessImage from "../../../assets/access1.png";
 
 const AboutSchool = () => {
   return (
-    <section className="about-school js-navbar-bg flex flex-col md:flex-row justify-center items-center gap-6 py-12 px-4">
-      <div className="picture">
+    <section className="flex flex-col md:flex-row justify-center items-center gap-6 py-12 px-4">
+      <div>
         <img
-          className="student-image w-full max-w-md rounded-lg shadow-md"
+          className="w-full max-w-md rounded-lg shadow-md"
           src={universityImage}
           alt="University"
         />
       </div>
 
-      <div className="about-course max-w-2xl">
-        <div className="free-course mb-6">
+      <div className="max-w-2xl">
+        <div className="mb-6">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Welcome to Education University,
             Enhance your skill with the best Online Courses
@@ -26,16 +26,15 @@ const AboutSchool = () => {
           </p>
         </div>
 
-        {/* Course 1 */}
-        <div className="free-one flex items-center mb-6">
-          <div className="course-icon mr-4">
+        <div className="flex items-center mb-6">
+          <div className="mr-4">
             <img
-              className="icon w-16 h-16 object-cover rounded-full"
+              className="w-16 h-16 object-cover rounded-full"
               src={courseImage1}
               alt="Course 1"
             />
           </div>
-          <div className="info-courses">
+          <div>
             <h2 className="text-2xl font-semibold text-gray-800">
               400+ courses
             </h2>
@@ -45,16 +44,15 @@ const AboutSchool = () => {
           </div>
         </div>
 
-        {/* Lifetime Access */}
-        <div className="free-one flex items-center">
-          <div className="course-icon mr-4">
+        <div className="flex items-center">
+          <div className="mr-4">
             <img
-              className="icon w-16 h-16 object-cover rounded-full"
+              className="w-16 h-16 object-cover rounded-full"
               src={accessImage}
               alt="Lifetime Access"
             />
           </div>
-          <div className="info-courses">
+          <div>
             <h2 className="text-2xl font-semibold text-gray-800">
               Lifetime Access
             </h2>

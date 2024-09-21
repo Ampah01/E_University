@@ -58,7 +58,7 @@ const Navbar = () => {
       className={`fixed w-full h-16 flex justify-between items-center px-6 z-50 transition-colors duration-300 ${navBg}`}
     >
       <NavLink to="/" onClick={handleLinkClick}>
-        <img src={logo} alt="Logo" className="w-14 md:h-16 h-12" />
+        <img src={logo} alt="Logo" className="md:w-14 md:h-16 h-12 " />
       </NavLink>
 
       <ul className={`hidden md:flex md:space-x-6 font-semibold ${linkColor}`}>
@@ -116,15 +116,17 @@ const Navbar = () => {
           <NavLink
             to="/login"
             className={({ isActive }) =>
-              isActive ? "text-yellow-600" : "hover:text-yellow-600"
+              isActive
+                ? "bg-yellow-600 text-gray-800 px-4 py-2 rounded-md"
+                : "bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700 hover:text-yellow-600"
             }
+            onClick={handleLinkClick}
           >
             Login
           </NavLink>
         </li>
       </ul>
 
-      
       <div className="md:hidden">
         <button
           onClick={toggleMenu}
@@ -140,19 +142,19 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed top-0 right-0 h-full w-2/3 bg-white shadow-lg p-6 transition-transform transform ${
+        className={`fixed top-16 right-0 h-40vh w-[45%] bg-slate-500 bg-opacity-60 backdrop-blur-md border-gray-200 shadow-lg px-4 text-center py-12 rounded-bl-lg transition-transform transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        <ul className="flex flex-col space-y-6 text-gray-800 font-semibold">
+        <ul className="flex flex-col space-y-6 text-white font-semibold">
           <li>
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "text-yellow-600" : "hover:text-yellow-600"
+                isActive ? "text-yellow-300" : "hover:text-yellow-300"
               }
               onClick={handleLinkClick}
             >
@@ -163,7 +165,7 @@ const Navbar = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                isActive ? "text-yellow-600" : "hover:text-yellow-600"
+                isActive ? "text-yellow-300" : "hover:text-yellow-300"
               }
               onClick={handleLinkClick}
             >
@@ -174,7 +176,7 @@ const Navbar = () => {
             <NavLink
               to="/blog"
               className={({ isActive }) =>
-                isActive ? "text-yellow-600" : "hover:text-yellow-600"
+                isActive ? "text-yellow-300" : "hover:text-yellow-300"
               }
               onClick={handleLinkClick}
             >
@@ -185,7 +187,7 @@ const Navbar = () => {
             <NavLink
               to="/courses"
               className={({ isActive }) =>
-                isActive ? "text-yellow-600" : "hover:text-yellow-600"
+                isActive ? "text-yellow-300" : "hover:text-yellow-300"
               }
               onClick={handleLinkClick}
             >
@@ -196,7 +198,7 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                isActive ? "text-yellow-600" : "hover:text-yellow-600"
+                isActive ? "text-yellow-300" : "hover:text-yellow-300"
               }
               onClick={handleLinkClick}
             >
@@ -208,8 +210,8 @@ const Navbar = () => {
               to="/login"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-yellow-600 text-gray-800 px-4 py-2 rounded-md"
-                  : "bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700 hover:text-yellow-600"
+                  ? "bg-yellow-600 text-white px-4 py-2 rounded-md"
+                  : "bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700"
               }
               onClick={handleLinkClick}
             >

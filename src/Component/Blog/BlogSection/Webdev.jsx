@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image1 from "../../../assets/blog4.jpg";
+import Image1 from "../../../assets/blog5.jpg";
 
 const Webdev = () => {
   return (
-    <div className="blog-cont blog-post p-24  bg-white shadow-lg rounded-lg">
+    <div className="md:p-24 p-10 mt-10 md:mt-0 bg-white shadow-lg rounded-lg">
       <img
-        className="blog-image w-full h-64 object-cover rounded-lg mb-6"
+        className="w-full h-64 object-cover rounded-lg mb-6"
         src={Image1}
         alt="Web Development course banner"
       />
@@ -52,7 +52,7 @@ const Webdev = () => {
           Back
         </Link>
         <Link
-          to="/courses/app-dev" // Ensure this path matches your route
+          to="/courses/app-dev" 
           className="text-indigo-600 hover:underline font-semibold"
         >
           Get Course

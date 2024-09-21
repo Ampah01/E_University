@@ -3,7 +3,7 @@ import library from "../../../assets/library.jpg";
 
 const About = () => {
   return (
-    <section className="home bg-gray-100">
+    <section className="bg-gray-100">
       <section
         className="relative flex flex-col justify-center items-center text-center md:h-[50vh] h-[300px]"
         style={{
@@ -16,7 +16,7 @@ const About = () => {
         }}
       >
         <div className="relative z-10">
-        <h1 class="text-white font-semibold md:text-[3rem] text-3xl">About /</h1>
+        <h1 className="text-white font-semibold md:text-[3rem] text-3xl">About /</h1>
         </div>
       </section>
     </section>

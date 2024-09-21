@@ -21,57 +21,57 @@ const BlogSection = () => {
       title: "Learn App Development In The Easiest Way",
       description:
         "Dive into app development with our step-by-step guide. Learn how to create powerful, user-friendly mobile applications that work across multiple platforms.",
-      link: "/blogs/app-development",
+      link: "/blog/appdev",
     },
     {
       image: Image3,
       title: "Learn Web Design In The Easiest Way",
       description:
         "Understand the principles of web design and how to create visually appealing websites. Our tutorials cover everything from layout design to color theory, helping you build engaging user experiences.",
-      link: "/blogs/web-design",
+      link: "/blog/webdesign",
     },
     {
       image: Image4,
       title: "Learn Frontend Web In The Easiest Way",
       description:
         "Get hands-on experience in frontend development. Learn how to use HTML, CSS, and JavaScript to create dynamic, interactive websites that work seamlessly on any device.",
-      link: "/blogs/frontend-web",
+      link: "/blog/frontend",
     },
     {
       image: Image5,
       title: "Learn Python Programming In The Easiest Way",
       description:
         "Python is one of the most versatile programming languages. Learn how to write clean, efficient code with our beginner-friendly Python tutorials, perfect for those looking to get into web or software development.",
-      link: "/blogs/python-programming",
+      link: "/blog/python",
     },
     {
       image: Image6,
       title: "Learn JavaScripts Hacks In The Easiest Way",
       description:
         "Discover the hidden powers of JavaScript with our collection of useful tips and tricks. From speeding up development to solving complex problems, these hacks will make your code smarter.",
-      link: "/blogs/JavaScript",
+      link: "/blog/javascript",
     },
   ];
 
   const categories = [
-    { name: "Web Development", link: "/blogs/web-development" },
-    { name: "App Development", link: "/blogs/app-development" },
-    { name: "Web Design", link: "/blogs/web-design" },
-    { name: "Frontend Web", link: "/blogs/frontend-web" },
-    { name: "Python Programming", link: "/blogs/python-programming" },
-    { name: "JavaScripts Hacks", link: "/blogs/JavaScript" },
+    { name: "Web Development", link: "/blog/webdev" },
+    { name: "App Development", link: "/blog/appdev" },
+    { name: "Web Design", link: "/blog/webdesign" },
+    { name: "Frontend Web", link: "/blog/frontend" },
+    { name: "Python Programming", link: "/blog/python" },
+    { name: "JavaScripts Hacks", link: "/blog/javaScript" },
   ];
 
   return (
-    <section className="all-containers bg-gray-100 py-12 px-4">
-      <div className="blog-containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section className="bg-gray-100 py-12 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="blog-cont bg-white shadow-md rounded-lg p-6"
+            className="bg-white shadow-md rounded-lg p-6"
           >
             <img
-              className="blog-image w-full h-48 object-cover rounded-lg mb-4"
+              className="w-full h-48 object-cover rounded-lg mb-4"
               src={blog.image}
               alt={blog.title}
             />

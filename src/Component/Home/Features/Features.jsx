@@ -5,9 +5,12 @@ const FeaturesSection = () => {
   return (
     <section className="bg-gray-100 py-16 px-8">
       <div className="text-center mb-12">
-        <h1 className="text-3xl font-bold mb-4 text-gray-800">Awesome Feature</h1>
+        <h1 className="text-3xl font-bold mb-4 text-gray-800">
+          Awesome Features
+        </h1>
         <p className="text-lg text-gray-700">
-          Replenish man have thing gathering lights yielding shall you
+          Discover powerful tools and features designed to enhance your
+          experience and productivity.
         </p>
       </div>
       <div className="flex flex-wrap justify-center gap-8">

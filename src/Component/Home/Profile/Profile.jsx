@@ -1,9 +1,9 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import profile1 from '../../../assets/profile5.jpg';
-import profile2 from '../../../assets/profile2.jpg';
-import profile3 from '../../../assets/profile3.jpg';
-import profile4 from '../../../assets/profile4.jpg';
+import profile1 from "../../../assets/profile5.jpg";
+import profile2 from "../../../assets/profile2.jpg";
+import profile3 from "../../../assets/profile3.jpg";
+import profile4 from "../../../assets/profile4.jpg";
 
 const profiles = [
   {
@@ -31,13 +31,19 @@ const profiles = [
 const ProfileSection = () => {
   return (
     <section className="py-12 px-4">
-      <h1 className="text-3xl font-bold text-center mb-4 text-gray-800">Community Experts</h1>
-      <p className="text-center mb-8 text-gray-600">
-        Replenish man have thing gathering lights yielding shall you
+      <h1 className="text-3xl font-bold text-center mb-4 text-gray-800">
+        Community Experts
+      </h1>
+      <p className="text-center mb-8 text-gray-700">
+        Connect with experienced professionals and leaders who share valuable
+        insights and expertise.
       </p>
       <div className="flex flex-wrap justify-center gap-8">
         {profiles.map((profile, index) => (
-          <div key={index} className="bg-white shadow-lg rounded-lg p-6 max-w-xs text-center">
+          <div
+            key={index}
+            className="bg-white shadow-lg rounded-lg p-6 max-w-xs text-center"
+          >
             <img
               src={profile.imgSrc}
               alt={profile.name}

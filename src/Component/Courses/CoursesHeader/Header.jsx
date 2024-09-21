@@ -16,7 +16,7 @@ const Courses = () => {
         }}
       >
         <div className="relative z-10">
-          <h1 class="text-white font-semibold md:text-[3rem] text-3xl">
+          <h1 className="text-white font-semibold md:text-[3rem] text-3xl">
             Courses /
           </h1>
         </div>
