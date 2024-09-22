@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import pythonImage from "../../../assets/pic 5.jpg"; 
 import profile from "../../../assets/profile2.jpg";
 
-const Course = () => {
+const PythonCourse = () => {
   return (
     <>
       <section
@@ -170,4 +170,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default PythonCourse;

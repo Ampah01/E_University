@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import frontendImage from "../../../assets/blog2.jpg"; 
 import profile from "../../../assets/profile5.jpg"; 
 
-const Course = () => {
+const FrontendCourse = () => {
   return (
     <>
       <section
@@ -170,4 +170,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default FrontendCourse;

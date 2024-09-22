@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import javaHackImage from "../../../assets/blog7.jpg"; 
 import profile from "../../../assets/profile3.jpg"; 
 
-const Course = () => {
+const JavaHackCourse = () => {
   return (
     <>
       <section
@@ -170,4 +170,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default JavaHackCourse;

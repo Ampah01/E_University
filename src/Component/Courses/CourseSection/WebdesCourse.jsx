@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import webDesignImage from "../../../assets/blog8.jpg";
 import profile from "../../../assets/profile4.jpg"; 
 
-const Course = () => {
+const WebdesCourse = () => {
   return (
     <>
       <section
@@ -171,4 +171,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default WebdesCourse;

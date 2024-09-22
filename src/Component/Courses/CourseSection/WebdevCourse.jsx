@@ -11,11 +11,10 @@ import {
   faAward,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import school5 from "../../../assets/school5.jpg";
 import blog5 from "../../../assets/blog5.jpg";
 import profile from "../../../assets/profile2.jpg";
 
-const Course = () => {
+const WebdevCourse = () => {
   return (
     <>
       <section
@@ -215,4 +214,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default WebdevCourse;
