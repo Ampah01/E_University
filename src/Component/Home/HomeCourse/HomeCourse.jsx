@@ -17,7 +17,7 @@ const coursesData = [
     rating: 4,
     reviews: 199,
     price: "$49.99",
-    link: "courses/webdev.html",
+    link: "courses/webdevcourse",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const coursesData = [
     rating: 5,
     reviews: 103,
     price: "$49.99",
-    link: "courses/app-dev.html",
+    link: "courses/appdevcourse",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const coursesData = [
     rating: 5,
     reviews: 239,
     price: "$49.99",
-    link: "courses/web-des.html",
+    link: "courses/webdescourse",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const coursesData = [
     rating: 4,
     reviews: 219,
     price: "$49.99",
-    link: "courses/front.html",
+    link: "courses/frontendcourse",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const coursesData = [
     rating: 5,
     reviews: 239,
     price: "$49.99",
-    link: "courses/pythonProgram.html",
+    link: "courses/pythoncourse",
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ const coursesData = [
     rating: 4,
     reviews: 222,
     price: "$49.99",
-    link: "courses/javaHack.html",
+    link: "courses/javahackcourse",
   },
 ];
 

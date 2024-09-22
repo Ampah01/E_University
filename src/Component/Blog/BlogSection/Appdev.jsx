@@ -30,7 +30,7 @@ const Appdev = () => {
           Back
         </Link>
         <Link
-          to="/courses/app-dev"
+          to="/courses/appdevcourse"
           className="text-indigo-600 hover:underline font-semibold"
         >
           Get Course

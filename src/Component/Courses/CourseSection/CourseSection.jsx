@@ -19,34 +19,34 @@ const coursesData = [
     stars: 5,
     rating: 199,
     price: "$49.99",
-    link: "courses/webdev.html"
+    link: "courses/webdevcourse",
   },
   {
     title: "C++ Beginner's Course",
-    image: Image10,
+    image: Image6,
     updated: "21/08/24",
     stars: 5,
     rating: 201,
     price: "$49.99",
-    link: "courses/c++.html"
+    link: "courses/cppcourse"
   },
   {
     title: "App Development Course",
-    image: Image6,
-    updated: "21/08/24",
-    stars: 5,
-    rating: 103,
-    price: "$49.99",
-    link: "courses/app-dev.html"
-  },
-  {
-    title: "Node.js Beginner's Course",
     image: Image4,
     updated: "21/08/24",
     stars: 5,
     rating: 103,
     price: "$49.99",
-    link: "courses/node.html"
+    link: "courses/appdevcourse"
+  },
+  {
+    title: "Node.js Beginner's Course",
+    image: Image8,
+    updated: "21/08/24",
+    stars: 5,
+    rating: 103,
+    price: "$49.99",
+    link: "courses/nodecourse"
   },
   {
     title: "Web Design Course",
@@ -55,7 +55,7 @@ const coursesData = [
     stars: 5,
     rating: 239,
     price: "$49.99",
-    link: "courses/web-des.html"
+    link: "courses/webdescourse"
   },
   {
     title: "Java Programming Course",
@@ -64,7 +64,7 @@ const coursesData = [
     stars: 5,
     rating: 99,
     price: "$49.99",
-    link: "courses/java.html"
+    link: "courses/javacourse"
   },
   {
     title: "Frontend Web Course",
@@ -73,7 +73,7 @@ const coursesData = [
     stars: 4,
     rating: 219,
     price: "$49.99",
-    link: "courses/front.html"
+    link: "courses/frontendcourse"
   },
   {
     title: "Python Programming",
@@ -82,7 +82,7 @@ const coursesData = [
     stars: 5,
     rating: 239,
     price: "$49.99",
-    link: "courses/pythonProgram.html"
+    link: "courses/pythoncourse"
   },
   {
     title: "JavaScripts Hacks Course",
@@ -91,16 +91,16 @@ const coursesData = [
     stars: 4,
     rating: 222,
     price: "$49.99",
-    link: "courses/javaHack.html"
+    link: "courses/javahackcourse"
   },
   {
     title: "Data Science Beginner's Course",
-    image: Image8,
+    image: Image10,
     updated: "21/08/24",
     stars: 5,
     rating: 103,
     price: "$49.99",
-    link: "courses/dataScience.html"
+    link: "courses/datasciencecourse"
   }
 ];
 

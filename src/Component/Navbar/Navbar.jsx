@@ -118,7 +118,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive
                 ? "bg-yellow-600 text-gray-800 px-4 py-2 rounded-md"
-                : "bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700 hover:text-yellow-600"
+                : "bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700 hover:text-black"
             }
             onClick={handleLinkClick}
           >
@@ -211,7 +211,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "bg-yellow-600 text-white px-4 py-2 rounded-md"
-                  : "bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700"
+                  : "bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700 hover:text-black"
               }
               onClick={handleLinkClick}
             >
