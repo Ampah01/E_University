@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import blog4 from "../../../assets/blog4.jpg";
 import profile from "../../../assets/profile2.jpg";
 
-const AppdevCourse = () => {
+const Appdevcourse = () => {
   return (
     <>
       <section
@@ -215,4 +215,4 @@ const AppdevCourse = () => {
   );
 };
 
-export default AppdevCourse;
+export default Appdevcourse;

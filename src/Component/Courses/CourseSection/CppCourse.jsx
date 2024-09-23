@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import cppImage from "../../../assets/pic 6.jpg"; 
 import profile from "../../../assets/profile2.jpg";
 
-const CppCourse = () => {
+const Cppcourse = () => {
   return (
     <>
       <section
@@ -171,4 +171,4 @@ const CppCourse = () => {
   );
 };
 
-export default CppCourse;
+export default Cppcourse;

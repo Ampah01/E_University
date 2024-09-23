@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import javaImage from "../../../assets/pic 9.jpg"; 
 import profile from "../../../assets/profile2.jpg"; 
 
-const JavaCourse = () => {
+const Javacourse = () => {
   return (
     <>
       <section
@@ -171,4 +171,4 @@ const JavaCourse = () => {
   );
 };
 
-export default JavaCourse;
+export default Javacourse;

@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import dataScienceImage from "../../../assets/pic 8.jpg";
 import profile from "../../../assets/profile2.jpg"; 
 
-const DataScienceCourse = () => {
+const Datasciencecourse = () => {
   return (
     <>
       <section
@@ -169,4 +169,4 @@ const DataScienceCourse = () => {
   );
 };
 
-export default DataScienceCourse;
+export default Datasciencecourse;
