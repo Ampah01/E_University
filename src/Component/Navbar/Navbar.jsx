@@ -112,7 +112,6 @@ const Navbar = () => {
             Contact
           </NavLink>
         </li>
-        
       </ul>
 
       <div className="md:hidden">
@@ -192,8 +191,6 @@ const Navbar = () => {
             >
               Contact
             </NavLink>
-          </li>
-          <li>
           </li>
         </ul>
       </div>
