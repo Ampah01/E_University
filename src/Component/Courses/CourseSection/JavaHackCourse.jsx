@@ -59,7 +59,7 @@ const Javahackcourse = () => {
             </div>
             <div className="course-price">
               <Link
-                to="/checkout"
+                to="/"
                 className="block bg-blue-200 text-blue-900 text-lg font-bold py-4 px-6 rounded-lg"
               >
                 $69.99
@@ -159,7 +159,7 @@ const Javahackcourse = () => {
             </p>
           ))}
           <Link
-            to="/enroll"
+            to="/"
             className="block text-center py-3 px-6 bg-blue-900 text-white rounded-md font-medium hover:bg-blue-800 mt-6 mx-auto"
           >
             Enroll Course

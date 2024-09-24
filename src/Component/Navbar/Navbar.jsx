@@ -112,19 +112,7 @@ const Navbar = () => {
             Contact
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/login"
-            className={({ isActive }) =>
-              isActive
-                ? "bg-yellow-600 text-gray-800 px-4 py-2 rounded-md"
-                : "bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700 hover:text-black"
-            }
-            onClick={handleLinkClick}
-          >
-            Login
-          </NavLink>
-        </li>
+        
       </ul>
 
       <div className="md:hidden">
@@ -206,17 +194,6 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/login"
-              className={({ isActive }) =>
-                isActive
-                  ? "bg-yellow-600 text-white px-4 py-2 rounded-md"
-                  : "bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700 hover:text-black"
-              }
-              onClick={handleLinkClick}
-            >
-              Login
-            </NavLink>
           </li>
         </ul>
       </div>

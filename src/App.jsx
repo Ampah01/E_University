@@ -14,7 +14,7 @@ import ScrollToTop from "./Component/ScrollToTop";
 import Webdesign from "./Component/Blog/BlogSection/Webdesign";
 import Frontend from "./Component/Blog/BlogSection/Frontend";
 import Python from "./Component/Blog/BlogSection/Python";
-import Javascript from "./Component/Blog/BlogSection/Javascript";";
+import Javascript from "./Component/Blog/BlogSection/Javascript";
 import Webdevcourse from "./Component/Courses/CourseSection/Webdevcourse";
 import Nodecourse from "./Component/Courses/CourseSection/Nodecourse";
 import Webdescourse from "./Component/Courses/CourseSection/Webdescourse";
@@ -24,7 +24,7 @@ import Javacourse from "./Component/Courses/CourseSection/Javacourse";
 import Javahackcourse from "./Component/Courses/CourseSection/Javahackcourse";
 import Frontendcourse from "./Component/Courses/CourseSection/Frontendcourse";
 import Pythoncourse from "./Component/Courses/CourseSection/Pythoncourse";
-import AppdevCourse from "./Component/Courses/CourseSection/AppdevCourse";
+import AppdevCourse from "./Component/Courses/CourseSection/Appdevcourse";
 
 function App() {
   return (
